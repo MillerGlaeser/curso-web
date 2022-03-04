@@ -1,0 +1,167 @@
+<p>
+    <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" 
+    alt="Muro cidade" 
+    width="513" height="342"
+    title="Muro da Cidade por Tarso Bessa">
+</p>
+
+<p>
+    <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" 
+    alt="Intro Cod3r" height="342">
+</p>
+
+<p class="circular">
+   <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+   alt="Rio de Janeiro" height="342">
+</p>
+
+<p class="texto">
+  <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" 
+  alt="Avatar" height="50" align="left">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Eaque vitae non, sequi, similique distinctio facilis 
+  delectus error cupiditate reiciendis quis iste repellendus 
+  corporis dolor unde suscipit reprehenderit deleniti maiores
+  iure?
+</p>
+
+<p class="cidade"></p>
+
+<p>
+    <picture>
+        <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png" 
+        media="(min-width: 600px">
+        <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="Logo Estreita">
+    </picture>
+</p>
+
+<ul class="slider">
+    <li>
+        <input type="radio" id="slider1" name="slider" checked>
+        <label for="slider1"></label>
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Muro cidade">
+    </li>
+    <li>
+        <input type="radio" id="slider2" name="slider">
+        <label for="slider2"></label>
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="">
+    </li>
+    <li>
+        <input type="radio" id="slider3" name="slider">
+        <label for="slider3"></label>
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="">
+    </li>
+    <li>
+        <input type="radio" id="slider4" name="slider">
+        <label for="slider4"></label>
+        <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="">
+    </li>
+    <li>
+        <input type="radio" id="slider5" name="slider">
+        <label for="slider5"></label>
+        <img src="http://files.cod3r.com.br/curso-web/logo-larga.png" alt="">
+    </li>
+    <li>
+        <input type="radio" id="slider6" name="slider">
+        <label for="slider6"></label>
+        <img src="http://files.cod3r.com.br/curso-web/imagem4.jpg" alt="">
+    </li>
+
+</ul>
+
+<style>
+    .slider {
+        display: block;
+        height: 293px;
+        width: 600px;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .slider li {
+        list-style: none;
+        position: absolute;
+    }
+
+    .slider img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .slider input {
+        display: none;
+    }
+
+    .slider label {
+        background-color: #000;
+        bottom: 10px;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        z-index: 10;
+    }
+
+    .slider li:nth-child(1) label {
+        left: 10px;
+    }
+
+    .slider li:nth-child(2) label {
+        left: 40px;
+    }
+
+    .slider li:nth-child(3) label {
+        left: 70px;
+    }
+
+    .slider li:nth-child(4) label {
+        left: 100px;
+    }
+
+    .slider li:nth-child(5) label {
+        left: 130px;
+    }
+
+    .slider li:nth-child(6) label {
+        left: 160px;
+    }
+    .slider img {
+    opacity: 0;
+    visibility: hidden;
+    }
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    }
+
+</style>
+
+<style>
+    .circular {
+        width: 513px;
+        background-color: #444;
+    }
+
+    .texto {
+        width: 400px;
+    }
+
+    .texto img {
+        margin-right: 10px;
+    }
+
+    .cidade {
+        width: 513px;
+        height: 342;
+        background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 200%;
+    }
+</style>
